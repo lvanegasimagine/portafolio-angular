@@ -8,4 +8,4 @@ export interface InfoPagina{
     instagram?: string;
     tublr?: string;
     equipo_trabajo?: any[];
-  }
+}
