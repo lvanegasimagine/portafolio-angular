@@ -7,7 +7,7 @@ import { ItemComponent } from './pages/item/item.component';
 const appRoutes: Routes = [
     {path: 'home' , component: PortafolioComponent},
     {path: 'about' , component: AboutComponent},
-    {path: 'item' , component: ItemComponent},
+    {path: 'item/:idProducto' , component: ItemComponent},
     {path: '**' , pathMatch: 'full', redirectTo: 'home'},
 
 ];
@@ -16,11 +16,9 @@ const appRoutes: Routes = [
     imports: [
         RouterModule.forRoot(appRoutes, {useHash: true})
     ],
-    exports:[
+    exports: [
         RouterModule
     ]
 })
 
-export class AppRoutingModule{
-
-}
+export class AppRoutingModule{ }
